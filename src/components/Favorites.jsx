@@ -1,5 +1,5 @@
 import { Row, Col } from 'react-bootstrap';
-import { StarFill } from "react-bootstrap-icons";
+import { X } from "react-bootstrap-icons";
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFav } from '../redux/actions';
 import { Link } from 'react-router-dom';
@@ -29,8 +29,8 @@ const Favorites = () => {
                                     style={{ border: '1px solid #00000033', borderRadius: 4 }}
                                 >
                                     <Col xs={1}>
-                                        <StarFill color="gold"
-                                            size={25}
+                                        <X color="red"
+                                            size={35}
                                             className="mx-1"
                                             onClick={() => handleRemove(i)}
                                         />
